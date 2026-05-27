@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montez&display=swap");
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cormorant", serif;
+    background: linear-gradient(135deg, #fdfbff, #f3edff, #ffffff);
+    color: #2c2c2c;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* soft glowing background effect */
+body::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(
+        circle,
+        rgba(155, 89, 182, 0.25),
+        transparent 70%
+    );
+    top: -100px;
+    left: -100px;
+    filter: blur(40px);
+}
+
+.container {
+    max-width: 650px;
+    padding: 30px;
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    font-size: 3.2rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #5a2a82; /* soft luxury purple */
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+}
+
+.names {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #7a3db8;
+}
+
+.date {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #666;
+}
+
+.footer {
+    margin-top: 25px;
+    font-size: 0.9rem;
+    color: #888;
+}
