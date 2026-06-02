@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="../02-CSS/style.css" />
+        <link rel="stylesheet" href="../02-CSS/photos.css" />
+        <link rel="stylesheet" href="../02-CSS/responsive.css" />
+
+        <title>Photos</title>
+    </head>
+
+    <body>
+        <!-- HERO -->
+        <div class="photos-hero-wrapper">
+            <div class="photos-overlay"></div>
+
+            <div class="container">
+                <!-- NAV -->
+                <nav>
+                    <a href="index.html" class="logo">Grace & Fayo</a>
+
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="gifts.html">Wedding Gifts</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                    </ul>
+
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars open-icon"></i>
+                        <i class="fa-solid fa-xmark close-icon"></i>
+                    </div>
+                </nav>
+
+                <!-- HERO CONTENT -->
+                <div class="photos-hero-content">
+                    <h2>Our Memories</h2>
+                    <p>A collection of beautiful moments from our journey</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FILTER SECTION -->
+        <section class="photo-filter-section">
+            <div class="container">
+                <div class="filter-tabs">
+                    <button class="active" data-filter="all">All</button>
+                    <button data-filter="traditional">
+                        Traditional Photos
+                    </button>
+                </div>
+
+                <!-- GALLERY -->
+                <div class="photo-grid">
+                    <div class="photo-card" data-category="traditional">
+                        <img src="/images/slider 1.jpg" alt="" />
+                    </div>
+
+                    <div class="photo-card" data-category="traditional">
+                        <img src="/images/slider 2.jpg" alt="" />
+                    </div>
+
+                    <div class="photo-card" data-category="modern">
+                        <img src="/images/slider 3.jpg" alt="" />
+                    </div>
+
+                    <div class="photo-card" data-category="traditional">
+                        <img src="/images/slider 4.jpg" alt="" />
+                    </div>
+
+                    <div class="photo-card" data-category="traditional">
+                        <img src="/images/slider 5.jpg" alt="" />
+                    </div>
+
+                    <div class="photo-card" data-category="modern">
+                        <img src="/images/couple 1.jpg" alt="" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gift-wrapper">
+            <a href="gifts.html" class="gift-floating-btn">
+                <span>Gift<br />Here</span>
+
+                <div class="gift-icon-box">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+            </a>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-left">
+                        <h2 class="footer-logo">Grace & Fayo</h2>
+                    </div>
+
+                    <div class="footer-right">
+                        <p class="footer-title">Quick Links</p>
+
+                        <div class="footer-links">
+                            <a href="index.html">Home</a>
+                            <span>|</span>
+                            <a href="hotels.html">Hotels</a>
+                            <span>|</span>
+                            <a href="gifts.html">Wedding Gifts</a>
+                            <span>|</span>
+                            <a href="photos.html">Photos</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/photos.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

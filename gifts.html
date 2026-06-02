@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="../02-CSS/style.css" />
+        <link rel="stylesheet" href="../02-CSS/gifts.css" />
+        <link rel="stylesheet" href="../02-CSS/responsive.css" />
+
+        <title>Gifts</title>
+    </head>
+    <body>
+        <!-- HERO -->
+        <div class="gift-hero-wrapper">
+            <div class="gift-overlay"></div>
+
+            <div class="container">
+                <!-- NAV -->
+                <nav>
+                    <a href="index.html" class="logo">Grace & Fayo</a>
+
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="gifts.html">Wedding Gifts</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                    </ul>
+
+                    <div class="hamburger" id="hamburger">
+                        <i class="fa-solid fa-bars open-icon"></i>
+                        <i class="fa-solid fa-xmark close-icon"></i>
+                    </div>
+                </nav>
+
+                <!-- HERO CONTENT -->
+                <div class="gift-hero-content">
+                    <h2>Our Romantic Escape</h2>
+
+                    <p>
+                        Your presence is already the greatest gift, but if you'd
+                        love to support our honeymoon journey, we'd truly
+                        appreciate it.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- GIFT SECTION -->
+        <section class="gift-section">
+            <div class="container">
+                <div class="gift-card">
+                    <!-- LEFT -->
+                    <div class="gift-image">
+                        <img src="/images/beach.jpg" alt="" />
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="gift-text">
+                        <h3>Romantic Escape</h3>
+
+                        <p>
+                            There’s no greater gift than your presence. Thank
+                            you for your support and love over the time we’ve
+                            known each other. If you wish to send a wedding
+                            gift, our honeymoon wish registry can be found in
+                            the button below.
+                        </p>
+
+                        <button class="gift-btn" id="openModal">
+                            GIVE (NGN)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- POPUP -->
+        <div class="donation-modal" id="donationModal">
+            <div class="modal-content">
+                <button class="close-btn" id="closeModal">×</button>
+
+                <h3>Bank Transfer</h3>
+
+                <p><strong>Bank:</strong> Acess Bank</p>
+
+                <p><strong>Account Name:</strong> Fayowole Solomon</p>
+
+                <p><strong>Account Number:</strong> 0051721255</p>
+            </div>
+        </div>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <!-- LEFT -->
+                    <div class="footer-left">
+                        <h2 class="footer-logo">Grace & Fayo</h2>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="footer-right">
+                        <p class="footer-title">Quick Links</p>
+
+                        <div class="footer-links">
+                            <a href="hotels.html">Hotels</a>
+                            <span>|</span>
+                            <a href="#">Wedding Gifts</a>
+                            <span>|</span>
+                            <a href="photos.html">Photos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/gift.js"></script>
+        <script src="./js/script.js"></script>
+    </body>
+</html>

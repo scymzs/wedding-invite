@@ -1,0 +1,353 @@
+/* ==================================
+   TABLET LARGE
+================================== */
+
+@media (max-width: 1100px) {
+    /* HERO */
+
+    .hero-text h1 {
+        font-size: 6rem;
+    }
+
+    .hero-text p {
+        font-size: 2rem;
+    }
+
+    /* LOVE STORY */
+
+    .story-scn {
+        gap: 2rem;
+    }
+
+    .left-story-scn {
+        flex: 1;
+    }
+
+    .right-story-scn {
+        flex: 1.1;
+        min-height: 450px;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        max-width: 100%;
+        padding: 0 2rem;
+        flex-wrap: wrap;
+    }
+
+    .footer-logo {
+        font-size: 2.8rem;
+    }
+
+    .footer-links a,
+    .footer-title {
+        font-size: 1.4rem;
+    }
+
+    .footer-links {
+        gap: 1rem;
+    }
+
+    /* GIFT BUTTON */
+
+    .gift-icon-box {
+        width: 50px;
+        height: 50px;
+    }
+
+    .gift-icon-box i {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 880px) {
+    /* NAVIGATION */
+
+    nav {
+        position: relative;
+        z-index: 1000;
+    }
+
+    nav .logo {
+        position: relative;
+        z-index: 1001;
+    }
+
+    nav ul {
+        position: fixed;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100vh;
+
+        background: rgba(90, 45, 108, 0.98);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        gap: 4rem;
+
+        margin: 0;
+        padding: 0;
+
+        transform: translateY(-100%);
+
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+
+        transition:
+            transform 0.4s ease,
+            opacity 0.3s ease;
+
+        z-index: 9999;
+    }
+
+    nav ul.active {
+        transform: translateY(0);
+
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+
+    nav ul li a {
+        font-size: 2.4rem;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        width: 45px;
+        height: 45px;
+
+        position: relative;
+
+        z-index: 10000;
+
+        cursor: pointer;
+
+        color: white;
+        font-size: 2.8rem;
+    }
+
+    .hamburger.active {
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+    }
+
+    .open-icon,
+    .close-icon {
+        position: absolute;
+        transition: 0.3s ease;
+    }
+
+    .close-icon {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    .hamburger.active .open-icon {
+        opacity: 0;
+        transform: rotate(90deg);
+    }
+
+    .hamburger.active .close-icon {
+        opacity: 1;
+        transform: rotate(0);
+    }
+
+    /* INFO SECTION */
+
+    .info-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-info-card,
+    .right-info-card {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* LOVE STORY */
+
+    .story-scn {
+        flex-direction: column;
+    }
+
+    .left-story-scn,
+    .right-story-scn {
+        width: 100%;
+    }
+
+    .right-story-scn {
+        min-height: 500px;
+    }
+
+    /* HOTELS */
+
+    .hotel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hotel-card {
+        width: 100%;
+    }
+
+    /* GIFTS */
+
+    .gift-card {
+        flex-direction: column;
+    }
+
+    .gift-image,
+    .gift-text {
+        width: 100%;
+    }
+
+    /* PHOTOS */
+
+    .photo-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    /* COUNTDOWN */
+
+    .count-box {
+        width: 110px;
+        height: 110px;
+    }
+
+    .hero-text,
+    .hero-scn,
+    .gift-hero-content,
+    .hotel-hero-content,
+    .photos-hero-content {
+        position: relative;
+        z-index: 1;
+    }
+
+    .footer-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        width: 100%;
+        padding: 0 1.5rem;
+    }
+    .footer-links {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1rem;
+    }
+}
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+
+    /* HERO */
+
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+
+    .hero-text h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-text p {
+        font-size: 1.7rem;
+    }
+
+    /* COUNTDOWN */
+
+    .countdown-wrapper {
+        gap: 1rem;
+    }
+
+    .count-box {
+        width: 80px;
+        height: 80px;
+    }
+
+    .count-box span {
+        font-size: 2rem;
+    }
+
+    /* INFO CARDS */
+
+    .left-info-card,
+    .right-info-card {
+        padding: 2.5rem;
+    }
+
+    /* LOVE STORY */
+
+    .love-story-section h1 {
+        font-size: 4rem;
+    }
+
+    .left-story-scn h2 {
+        font-size: 2.6rem;
+    }
+
+    /* FOOTER */
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    /* GIFT BUTTON */
+
+    .gift-floating-btn span {
+        display: none;
+    }
+
+    .gift-icon-box {
+        width: 45px;
+        height: 45px;
+    }
+
+    .gift-icon-box i {
+        font-size: 1.8rem;
+    }
+
+    .hotel-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* PHOTOS */
+
+    .photo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2rem;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+}

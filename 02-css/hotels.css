@@ -1,0 +1,101 @@
+/* =========================
+   HERO
+========================= */
+
+.hotel-hero-wrapper {
+    position: relative;
+    min-height: 100vh;
+
+    background-image: url("/images/couple 3.jpg");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.hotel-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+}
+
+/* NAV + HERO Z INDEX FIX */
+.hotel-hero-wrapper nav,
+.hotel-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hotel-hero-content {
+    height: calc(100vh - 10vh);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+}
+
+.hotel-hero-content h2 {
+    font-size: 6rem;
+    margin-bottom: 2rem;
+}
+
+.hotel-hero-content p {
+    font-size: 2rem;
+    max-width: 650px;
+    line-height: 1.6;
+}
+
+/* =========================
+   HOTELS SECTION
+========================= */
+
+.hotel-section {
+    padding: 10rem 0;
+    background: #f6f1ea;
+}
+
+.hotel-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3rem;
+}
+.hotel-grid a {
+    font-size: 1.7rem;
+}
+
+/* =========================
+   HOTEL CARD
+========================= */
+
+.hotel-card {
+    background: #efe7da;
+    border-radius: 1.5rem;
+
+    padding: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    transition: 0.3s ease;
+}
+
+.hotel-card:hover {
+    transform: translateY(-5px);
+}
+
+.hotel-card h3 {
+    font-size: 2.6rem;
+    color: #2d2d2d;
+}
+
+.hotel-card p {
+    font-size: 1.7rem;
+    line-height: 1.6;
+    color: #444;
+}

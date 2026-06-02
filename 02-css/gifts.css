@@ -1,0 +1,168 @@
+.gift-hero-wrapper {
+    position: relative;
+    min-height: 100vh;
+
+    background-image: url("/images/couple 2.jpg");
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+.gift-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.35);
+}
+
+.gift-hero-wrapper nav,
+.gift-hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.gift-hero-content {
+    height: calc(100vh - 10vh);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    color: white;
+}
+
+.gift-hero-content h2 {
+    font-size: 7rem;
+    margin-bottom: 2rem;
+}
+
+.gift-hero-content p {
+    font-size: 2.2rem;
+    max-width: 700px;
+    line-height: 1.7;
+}
+
+.gift-section {
+    padding: 10rem 0;
+    background: #f6f1ea;
+}
+
+.gift-card {
+    background: #efe7da;
+
+    border-radius: 2rem;
+
+    padding: 3rem;
+
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+
+    max-width: 1000px;
+    margin: auto;
+}
+
+.gift-image {
+    flex: 1;
+}
+
+.gift-image img {
+    width: 100%;
+    border-radius: 1.5rem;
+    object-fit: cover;
+}
+
+.gift-text {
+    flex: 1;
+}
+
+.gift-text h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: #2d2d2d;
+}
+
+.gift-text p {
+    font-size: 1.9rem;
+    line-height: 1.8;
+    margin-bottom: 3rem;
+}
+
+.gift-btn {
+    border: none;
+
+    background: #000;
+    color: #fff;
+
+    padding: 1.5rem 3rem;
+
+    font-size: 1.7rem;
+
+    cursor: pointer;
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.gift-btn:hover {
+    transform: translateY(-3px);
+}
+
+.donation-modal {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.6);
+
+    display: none;
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 999;
+}
+
+.modal-content {
+    background: white;
+
+    width: 90%;
+    max-width: 450px;
+
+    padding: 4rem;
+
+    border-radius: 1.5rem;
+
+    position: relative;
+
+    text-align: center;
+}
+
+.modal-content h3 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.modal-content p {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.close-btn {
+    position: absolute;
+
+    top: 1.5rem;
+    right: 2rem;
+
+    border: none;
+    background: none;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+}
