@@ -528,13 +528,18 @@ strong {
 .right-story-scn {
     flex: 1;
 
-    border: 10px solid #e6d6c3;
     border-radius: 10px;
     overflow: hidden;
 
     display: flex;
 
     min-height: 500px;
+
+    background: white;
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.08),
+        0 20px 50px rgba(90, 45, 108, 0.12);
 }
 
 /* =========================
@@ -717,6 +722,3 @@ strong {
 .gift-floating-btn.hero-active span {
     color: var(--white);
 }
-
-
-
