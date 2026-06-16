@@ -100,24 +100,17 @@ ul {
 }
 
 .slide-1 {
-    background-image: url("/images/couple\ 1.jpg");
+    background-image: url("/images/couple 1.png");
     animation:
-        fade 18s infinite,
-        zoom 18s infinite;
+        fade 12s infinite,
+        zoom 12s infinite;
 }
 
 .slide-2 {
-    background-image: url("/images/couple\ 2.jpg");
+    background-image: url("/images/couple 2.png");
     animation:
-        fade 18s infinite 6s,
-        zoom 18s infinite 6s;
-}
-
-.slide-3 {
-    background-image: url("/images/couple\ 3.jpg");
-    animation:
-        fade 18s infinite 12s,
-        zoom 18s infinite 12s;
+        fade 12s infinite 6s,
+        zoom 12s infinite 6s;
 }
 
 .hero-wrapper {
@@ -254,15 +247,15 @@ nav ul li a.active::after {
         opacity: 0;
     }
 
-    8% {
+    10% {
         opacity: 1;
     }
 
-    33% {
+    50% {
         opacity: 1;
     }
 
-    41% {
+    60% {
         opacity: 0;
     }
 
@@ -372,12 +365,32 @@ strong {
 }
 
 /*-- Countdown Section --*/
-
 .countdown-section {
+    position: relative;
+    overflow: hidden;
+
     text-align: center;
     padding: 8rem 2rem;
-    background: var(--light-lavender);
     color: var(--primary-purple);
+}
+
+.countdown-section::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)),
+        url("/images/photo\ 2.jpeg");
+
+    background-size: cover;
+    background-position: center 24%;
+    z-index: 0;
+}
+
+.countdown-container {
+    position: relative;
+    z-index: 1;
 }
 
 .countdown-container {
@@ -569,39 +582,24 @@ strong {
    ANIMATION
 ========================= */
 @keyframes slideImages {
-    0% {
-        transform: translateX(0);
-    }
-    15% {
-        transform: translateX(0);
-    }
-
+    0%,
     20% {
+        transform: translateX(0);
+    }
+
+    25%,
+    45% {
         transform: translateX(-100%);
     }
-    35% {
-        transform: translateX(-100%);
-    }
 
-    40% {
-        transform: translateX(-200%);
-    }
-    55% {
+    50%,
+    70% {
         transform: translateX(-200%);
     }
 
-    60% {
-        transform: translateX(-300%);
-    }
-    75% {
-        transform: translateX(-300%);
-    }
-
-    80% {
-        transform: translateX(-400%);
-    }
+    75%,
     100% {
-        transform: translateX(-400%);
+        transform: translateX(-300%);
     }
 }
 

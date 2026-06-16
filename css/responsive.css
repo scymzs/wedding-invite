@@ -120,6 +120,12 @@
         font-size: 2.4rem;
     }
 
+    .hotel-hero-wrapper,
+    .gift-hero-wrapper,
+    .photos-hero-wrapper {
+        background-position: 10% center;
+    }
+
     .hamburger {
         display: flex;
         justify-content: center;
@@ -236,6 +242,14 @@
         z-index: 1;
     }
 
+    .slide {
+        background-position: center center;
+    }
+
+    .countdown-section::before {
+        background-position: 20% center;
+    }
+
     .footer-container {
         flex-direction: row;
         justify-content: space-between;
@@ -272,6 +286,10 @@
 
     .hero-text p {
         font-size: 1.7rem;
+    }
+
+    .slide {
+        background-position: 35% center;
     }
 
     /* COUNTDOWN */

@@ -3,24 +3,266 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Coming Soon</title>
-        <link rel="stylesheet" href="/coming-soon.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+            integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="/css/style.css" />
+        <link rel="stylesheet" href="/css/responsive.css" />
+        <title>toWedII</title>
     </head>
-
     <body>
-        <div class="container">
-            <h1>Coming Soon</h1>
+        <!--Hero Wrapper-->
+        <div class="hero-wrapper">
+            <!--Backgound Image Slider-->
+            <div class="slider">
+                <div class="slide slide-1"></div>
+                <div class="slide slide-2"></div>
+                <div class="slide slide-3"></div>
+            </div>
 
-            <div class="names">Grace & Fayo</div>
+            <!-- Width Controller -->
+            <div class="container">
+                <!--Navigations-->
+                <nav>
+                    <a href="index.html" class="logo">Grace & Fayowole</a>
 
-            <div class="date">8th August 2026</div>
-
-            <p>
-                Our special day is almost here, and something beautiful is on
-                the way. Please check back soon for full details and updates.
-            </p>
-
-            <div class="footer">With love 💍</div>
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="hotels.html">Hotels</a></li>
+                        <li><a href="gifts.html">Wedding Gifts</a></li>
+                        <li><a href="photos.html">Photos</a></li>
+                    </ul>
+                    <div class="hamburger">
+                        <i class="fa-solid fa-bars open-icon"></i>
+                        <i class="fa-solid fa-xmark close-icon"></i>
+                    </div>
+                </nav>
+                <!--Hero Section-->
+                <div class="hero-scn">
+                    <!--Hero container-->
+                    <div class="hero-text">
+                        <h2>The wedding of</h2>
+                        <img src="/images/imgi_1_elements.png" alt="" />
+                        <h1>Grace & Fayowole</h1>
+                        <p>
+                            Together with their families invites you to
+                            celebrate their wedding
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <!--Info Section-->
+        <div class="info-section">
+            <div class="container">
+                <!--Info container-->
+                <div class="contain info-layout">
+                    <!--Left Card-->
+                    <div class="left-info-card">
+                        <div class="church-info">
+                            <h3 class="reveal delay-1">Wedding Ceremony</h3>
+                            <p class="reveal delay-2">
+                                <strong>Providence Baptist Church</strong>
+                            </p>
+                            <p class="reveal delay-1">
+                                Ajadi Town
+                            </p>
+                            <p class="reveal delay-2"> Along General Gas Road, <br> Iyana Church Ibadan.</p>
+                        </div>
+                        <div class="date-info-card">
+                            <h3 class="reveal delay-1">Date</h3>
+                            <p class="reveal delay-2">8th August, 2026</p>
+                        </div>
+                        <div class="time-info-card">
+                            <h3 class="reveal delay-1">Time</h3>
+                            <p class="reveal delay-2">8:00 AM</p>
+                        </div>
+                        <div class="RSVP Contact">
+                            <h3 class="reveal delay-1">Rsvp Contact</h3>
+                            <p class="reveal delay-2">
+                                070 302 53 802, 090 6700 5427
+                            </p>
+                        </div>
+                    </div>
+                    <!--Right Card-->
+                    <div class="right-info-card">
+                        <div class="church-info">
+                            <h3 class="reveal delay-1">Reception</h3>
+                            <p class="reveal delay-2">
+                                <strong>KEC Event Place, </strong>
+                            </p>
+                            <p class="reveal delay-1">
+                                Wofun Bus Stop,
+                            </p>
+                            <p class="reveal delay-2">
+                                Beside Winners Church,<br> Along Olodo-Iwo Road, Ibadan.
+                            </p>
+                        </div>
+                        <div class="date-info-card">
+                            <h3 class="reveal delay-1">Time,</h3>
+                            <p class="reveal delay-2">12:00 PM (Noon)</p>
+                        </div>
+                        <div class="time-info-card">
+                            <h3 class="reveal delay-1">Theme</h3>
+                            <p class="reveal delay-2">GFUnion26.</p>
+                        </div>
+                        <div class="dress-info-card">
+                            <h3 class="reveal delay-1">Dress Code</h3>
+                            <p class="reveal delay-2">White, Wine & Gold.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="countdown-section">
+            <div class="container">
+                <div class="countdown-container">
+                    <img src="/images/imgi_2_element-love-story.png" alt="" />
+                    <h2 class="section-title">Be A Part Of Our History</h2>
+                    <div class="countdown-wrapper">
+                        <div class="count-box">
+                            <span id="days">00</span>
+                            <p>Days</p>
+                        </div>
+
+                        <div class="count-box">
+                            <span id="hours">00</span>
+                            <p>Hours</p>
+                        </div>
+
+                        <div class="count-box">
+                            <span id="minutes">00</span>
+                            <p>Minutes</p>
+                        </div>
+
+                        <div class="count-box">
+                            <span id="seconds">00</span>
+                            <p>Seconds</p>
+                        </div>
+                    </div>
+                    <div class="countdown-content">
+                        <p>
+                            We'd love for you to join us on our special day.
+                            It'll be full of love, laughter, and unforgettable
+                            moments. Please note that this event is exclusively
+                            by invitation, ensuring an intimate gathering of our
+                            closest friends and family. Kindly RSVP to confirm
+                            attendance.
+                        </p>
+                    </div>
+                    <div class="countdown-buttons">
+                        <a
+                            href="https://www.google.com/calendar/render?action=TEMPLATE&text=Grace%20%26%20Fayowole%20Wedding&dates=20260808T070000Z/20260808T160000Z&details=Join%20us%20to%20celebrate%20the%20wedding%20of%20Grace%20%26%20Fayowole.&location=Providence%20Baptist%20Church%2C%20Ajadi%20Town%2C%20Along%20General%20Gas%20Road%2C%20Iyana%20Church%2C%20Ibadan"
+                            target="_blank"
+                            class="btn btn-primary primary reveal delay-1"
+                        >
+                            ADD TO CALENDAR
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="love-story-section">
+            <div class="container">
+                <h2>A STORY WE DIDN'T SEE COMING</h2>
+                <img
+                    class="love-img-element"
+                    src="/images/imgi_2_element-love-story.png"
+                    alt=""
+                />
+                <h1>Grace & Fayowole</h1>
+                <div class="story-scn">
+                    <div class="left-story-scn">
+                        <h2>How We Met</h2>
+                        <p>
+                            Before Grace and I ever exchanged a single message, she already knew that an invisible Fayo existed
+                        </p>
+                        <p>
+                            She heard about me through my brother, Femi, and my sister, Adetoun, who worked at the same office as her.
+                        </p>
+                        <p>
+                            During their lunch conversations, my name kept coming up, my lifestyle, personality, and everything I was involved into. The more she heard, the more curious she became.
+                            Funny enough, we were completely different.
+                        </p>
+                        <p>
+                            I wasn’t much of a social person and preferred a quiet life. Grace, on the other hand, carried a vibrant Gen-Z energy—full of life, expressive, and effortlessly magnetic.
+                        </p>
+                        <p>
+                            On paper, we should never have crossed paths. Still, she didn’t stop being curious.
+
+                            Then one night, Adetoun sent me a message:
+                            “There’s this lady called Grace. I think you should meet her.”
+                            I replied: “Okay, let’s see.”
+                        </p>
+                        <p>
+                            I didn’t know that those words would change everything. That evening, I texted her. The moment I saw her picture, I thought:
+                            “Wow… God really took His time with this one.”
+
+
+                        </p>
+                        <p>
+                            And just like that, casual messages became conversations I didn’t want to end… and something deeper slowly began.
+
+                        </p>
+                        <p>
+                            Looking back, it was never random.
+                            Just God quietly writing our story.
+                            From “let’s see”… to forever.
+                        </p>
+                    </div>
+                    <div class="right-story-scn">
+                        <div class="image-slider">
+                            <img src="/images/slider 2.jpeg" />
+                            <img src="/images/slider 3.jpeg" />
+                            <img src="/images/slider 4.jpeg" />
+                            <img src="/images/photo 1.jpeg" />
+                            <img src="/images/photo 3.jpeg" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gift-wrapper">
+            <a href="gifts.html" class="gift-floating-btn">
+                <span>Gift<br />Here</span>
+
+                <div class="gift-icon-box">
+                    <i class="fa-solid fa-gift"></i>
+                </div>
+            </a>
+        </div>
+
+        <footer class="footer">
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-container">
+                    <!-- LEFT -->
+                    <div class="footer-left">
+                        <h2 class="footer-logo">Grace & Fayowole</h2>
+                    </div>
+
+                    <!-- RIGHT -->
+                    <div class="footer-right">
+                        <p class="footer-title">Quick Links</p>
+
+                        <div class="footer-links">
+                            <a href="hotels.html">Hotels</a>
+                            <span>|</span>
+                            <a href="#">Wedding Gifts</a>
+                            <span>|</span>
+                            <a href="#">Photos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./js/script.js"></script>
     </body>
 </html>
