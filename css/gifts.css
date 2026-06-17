@@ -96,7 +96,7 @@
 .gift-btn {
     border: none;
 
-    background: #000;
+    background: var(--primary-purple);
     color: #fff;
 
     padding: 1.5rem 3rem;
