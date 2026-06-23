@@ -166,3 +166,23 @@
 
     cursor: pointer;
 }
+
+.account-box {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+
+    background: #f8f5fa;
+    border-left: 4px solid var(--primary-purple);
+    border-radius: 8px;
+}
+
+.account-box h4 {
+    font-size: 1.8rem;
+    color: var(--primary-purple);
+    margin-bottom: 1rem;
+}
+
+.account-box p {
+    font-size: 1.6rem;
+    margin-bottom: 0.5rem;
+}

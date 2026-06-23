@@ -292,6 +292,12 @@
         background-position: 35% center;
     }
 
+    .hotel-hero-wrapper,
+    .gift-hero-wrapper,
+    .photos-hero-wrapper {
+        background-position: 8% center;
+    }
+
     /* COUNTDOWN */
 
     .countdown-wrapper {
